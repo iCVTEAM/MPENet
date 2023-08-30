@@ -17,7 +17,7 @@ Moreover, we build a real-world stereo RGB-Event dataset to validate our network
 Experiments on both simulated and real-world dataset demonstrate our network can effectively deblurring especially in complex scenes.
 
 ## Dataset
-### Synthesized dataset.
+### Synthesized dataset
 Download the Synthesized dataset from [download_link](https://pan.baidu.com/s/11guCfQbra748LVzUEZpzuw), verify code: 1234. 
 
 The dataset structure is as follows
@@ -48,7 +48,7 @@ We provide the events file as TXT format and .aedat format (v2e simulator).
 Moreover, the timestamp of RGB images and events files is aligned. Both of them started from 0 timestamp. And the frame interval time of RGB images is 80ms.
 
 ### Real-world dataset
-Download the Real-world dataset from [download_link](), verify code: 1234.
+Download the Real-world dataset from [download_link](xxx), verify code: 1234.
 
 The dataset contains 13 sequences and the dataset structure is as follows
 ```

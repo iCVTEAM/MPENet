@@ -42,6 +42,7 @@ The dataset structure is as follows
 ```
 
 Each sequences folder contains `blur` folder and `hfps_RGB` folder. Their indexs are in one-to-one correspondence.
+
 We provide the events file as TXT format and .aedat format (v2e simulator).
 
 Moreover, the timestamp of RGB images and events files is aligned. Both of them started from 0 timestamp. And the frame interval time of RGB images is 80ms.

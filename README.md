@@ -17,8 +17,8 @@ Moreover, we build a real-world stereo RGB-Event dataset to validate our network
 Experiments on both simulated and real-world dataset demonstrate our network can effectively deblurring especially in complex scenes.
 
 ## Dataset
-Synthesized Dataset.
-Download the dataset from [download_link](https://pan.baidu.com/s/11guCfQbra748LVzUEZpzuw), verify code: 1234. 
+### Synthesized dataset.
+Download the Synthesized dataset from [download_link](https://pan.baidu.com/s/11guCfQbra748LVzUEZpzuw), verify code: 1234. 
 
 The dataset structure is as follows
 
@@ -46,3 +46,34 @@ Each sequences folder contains `blur` folder and `hfps_RGB` folder. Their indexs
 We provide the events file as TXT format and .aedat format (v2e simulator).
 
 Moreover, the timestamp of RGB images and events files is aligned. Both of them started from 0 timestamp. And the frame interval time of RGB images is 80ms.
+
+### Real-world dataset
+Download the Real-world dataset from [download_link](), verify code: 1234.
+
+The dataset contains 13 sequences and the dataset structure is as follows
+```
+.
+├── chessboard
+│   └── hfps_RGB
+│       ├── xxx.png
+│       ├── xxx.png
+│       ├── xxx.png
+│       ├── ...
+│   ├── events.txt
+│   └── info.txt
+│       ...
+├── waving_arms1
+│   └── hfps_RGB
+│       ├── xxx.png
+│       ├── xxx.png
+│       ├── xxx.png
+│       ├── ...
+│   ├── events.txt
+│   └── info.txt
+├── ...
+|   ...
+
+```
+`info.txt` contains the camera settings of two cameras and aligned timestamp.
+We use the timestamp offset to align timestamps, which provides the timestamp of the event file corresponding to the first RGB image. Subsequent images can be calculated based on the frame rate.
+Blur images can be simulated by provided `blur_simulator.py` or frame accumulation like GoPro dataset.

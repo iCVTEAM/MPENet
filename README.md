@@ -77,3 +77,5 @@ The dataset contains 13 sequences and the dataset structure is as follows
 `info.txt` contains the camera settings of two cameras and aligned timestamp.
 We use the timestamp offset to align timestamps, which provides the timestamp of the event file corresponding to the first RGB image. Subsequent images can be calculated based on the frame rate.
 Blur images can be simulated by provided `blur_simulator.py` or frame accumulation like GoPro dataset.
+
+In addition, for scenes like fire or ink_diffusion where the motion range is relatively small, the resolution is reduced during filming to 768*660 (with the surrounding background being nearly static).
